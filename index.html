@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K3V1N</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b1fa8e3a5e.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="img/Favicon.png" type="image/x-icon">
+</head>
+<body>
+
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="img/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">Sobre Mi</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#portfolio">Portafolio</a></li>
+                <li><a href="#contact">Contacto</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+            <h1>Hola, Soy <span>Kevin</span><br> Garcia</h1>
+        </div> 
+    </div>
+</div>
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="img/6707-fullbody.png">
+            </div>
+
+            <div class="about-col-2">
+                <h1 class="sub-title">Sobre Mi</h1>
+
+                <p>Mi nombre es Kevin Fabrizio García Espíritu. A la joven edad de 21 años, me apasiona la 
+                    investigación y la programación. Mi sueño más grande es fundar mi propia empresa de 
+                    software.
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('habilidades')">Habilidades</p>
+                    <p class="tab-links" onclick="opentab('aspiracion')">Aspiracion</p>
+                    <p class="tab-links" onclick="opentab('educacion')">Educacion</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="habilidades">
+                    <ul>
+                        <li>
+                            <span class="skill-title">UI/UX</span>
+                            <p class="skill-description">Diseño de Experiencia e Interfaz del Usuario</p>
+                        </li>
+                        <li>
+                            <span class="skill-title">Web Design</span>
+                            <p class="skill-description">Diseño de Interfaces Web</p>
+                        </li>
+                        <li>
+                            <span class="skill-title">Web Development</span>
+                            <p class="skill-description">Desarrollo de Aplicaciones Web</p>
+                        </li>
+                    </ul>
+                </div>
+                
+
+                <div class="tab-contents" id="aspiracion">
+                    <ul>
+                        <li>
+                            <span>*</span>
+                            Desde corta edad, me interesó aprender cómo se hacían los videojuegos, lo que despertó mi interés por la programación. Una de mis principales aspiraciones es culminar mi carrera y posteriormente fundar mi propia empresa de software y diseño web.
+                        </li>
+                    </ul>
+                </div>
+                
+
+                <div class="tab-contents" id="educacion">
+                    <ul>
+                        <li class="education-item">
+                            <span class="education-year">2023</span>
+                            <p class="education-description">Curso el 5to semestre de la carrera de Desarrollo de Sistemas de Información.</p>
+                        </li>
+                        <li class="education-item">
+                            <span class="education-year">2022</span>
+                            <p class="education-description">Inicio la carrera técnica Desarrollo de Sistemas de Información en el Instituto Continental.</p>
+                        </li>
+                        <li class="education-item">
+                            <span class="education-year">2018</span>
+                            <p class="education-description">Terminé la secundaria en el colegio Santa Cruz - Puerto Maldonado.</p>
+                        </li></ul>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Mi Servicios</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Diseño Web</h2>
+                <p>Diseño paginas Web Estaticas y Dinamicas de acuerdo a lo que requiera el cliente</p>
+                    <a href="#">Mas Informacion</a>
+            </div>
+
+            <div>
+                <i class="fa-sharp fa-solid fa-crop-simple"></i>
+                <h2>Diseño de UI/UX</h2>
+                <p>Diseño la interfaz del usuario </p>
+                    <a href="#">Mas Informacion</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Mis Trabajos</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="img/exchange.png">
+                <div class="layer">
+                    <h3>Exchange de Cripto</h3>
+                    <p> El exchange es donde se realizan los intercambios de dinero fiat
+                        (dolar, Soles, Euro, etc) a varias criptomonedas</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="img/NFT.png">
+                <div class="layer">
+                    <h3>Marketplace de NFT</h3>
+                    <p>El Marketplace es donde podrás comprar NFTs. hecho en 
+                        el ecosistema blockchain de la red Ethereum.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">Ver Mas</a>
+    </div>
+</div>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+        <div class="contact-left">
+            <h1 class="sub-title">Contactame</h1>
+            <p><i class="fa-sharp fa-solid fa-paper-plane"></i>Kevinfge2410@gmail.com</p>
+            <p><i class="fa-sharp fa-solid fa-phone"></i>940394404</p>
+            <div class="social-icons">
+                <a href="https://twitter.com/GarciaKevinFab"><i class="fa-brands fa-square-twitter"></i></a>
+            </div>
+            <a href="" class="btn btn2">Descargar CV</a>
+        </div>
+        <div class="contact-right">
+            <form action="">
+                <input type="text" name="Nombre" placeholder="Su Nombre" required>
+                <input type="email" name="Email" placeholder="Su Email" required>
+                <textarea name="Mensaje" rows="6" placeholder="Su Mensaje"></textarea>
+                <button type="submit" class="btn btn2">Enviar</button>
+            </form>
+            <span id="msg"></span>
+        </div>
+    </div>
+    </div>
+
+    <footer class="copyright">
+        <p>Copyright &copy; <span id="currentYear"></span> Kevin Garcia</p>
+        <script>
+            // Esto establecerá el año actual en el elemento con id "currentYear"
+            document.getElementById("currentYear").textContent = new Date().getFullYear();
+        </script>
+    </footer>
+    
+</div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>
